@@ -1,18 +1,10 @@
 import React from "react";
 
-const Checkbox = ({
-  type = "checkbox",
-  checked = false,
-  onChange,
-  label,
-  name
-}) => (
-  <>
-    <label>
-      <input type={type} name={name} checked={checked} onChange={onChange} />
-      {label}
-    </label>
-  </>
+const Checkbox = ({ type, name, checked, onChange }) => (
+  <label>
+    <input type={type} checked={checked} onChange={onChange} />
+    {name}
+  </label>
 );
 
 export default Checkbox;
